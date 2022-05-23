@@ -1,0 +1,13 @@
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn.btn-primary {
+  display: block;
+  text-align-last: center;
+  margin: 0 auto;
+  width: 120px;
+}
