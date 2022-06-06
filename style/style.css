@@ -1,8 +1,24 @@
 h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 300px;
-  font-size: 30px;
-  margin: 40px 40px;
-  padding: 20px;
-  text-align: center;
+  font-size: 25px;
+}
+
+.header {
+  font-family: sans-serif;
+  background-color: rgb(138, 211, 224);
+  margin-top: 30px;
+}
+.local-info {
+  font-size: 15px;
+}
+
+.weather-info {
+  background-color: rgb(255, 180, 177);
+}
+
+.picture {
+  background-color: rgb(218, 153, 212);
+}
+
+.weekly-forecast {
+  background-color: rgb(150, 219, 219);
 }
