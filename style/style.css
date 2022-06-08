@@ -1,7 +1,6 @@
 h1 {
   font-size: 25px;
 }
-
 .header {
   font-family: sans-serif;
   background-color: rgb(138, 211, 224);
@@ -10,11 +9,9 @@ h1 {
 .current-local-info {
   font-size: 15px;
 }
-
 .weather-search {
   background-color: rgb(255, 180, 177);
 }
-
 .search-engine {
   margin: 0 auto;
   padding: 10px 15px;
@@ -22,11 +19,9 @@ h1 {
 .picture {
   background-color: rgb(218, 153, 212);
 }
-
 .weekly-forecast {
   background-color: rgb(150, 219, 219);
 }
-
 .search-result {
   display: block;
   margin: 0 auto;
@@ -36,7 +31,6 @@ h1 {
 .description {
   display: inline;
 }
-
 .weekly-forecast {
   list-style: none;
 }
