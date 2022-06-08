@@ -1,18 +1,28 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
+
+.weather-app {
+  border: 1px solid gray;
+  max-width: 1020px;
+  border-radius: 2px;
+}
 h1 {
   font-size: 25px;
 }
 .header {
   background-color: rgb(138, 211, 224);
-  margin-top: 30px;
+  margin: 10px auto;
+  max-width: 1000px;
+  border-radius: 2px;
 }
+
 .current-local-info {
   font-size: 15px;
 }
+
 .weather-search {
-  background-color: rgb(255, 180, 177);
+  background-color: #e2f3f1;
 }
 .search-engine {
   margin: 0 auto;

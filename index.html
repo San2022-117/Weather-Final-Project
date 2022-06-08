@@ -22,67 +22,26 @@
   </head>
   <body>
     <div class="container">
-      <div class="row header" id="header">
-        <div class="col-6">
-          <h1>Weather Channel Bee</h1>
-        </div>
-        <div class="col-6">
-          <span class="current-local-info"
-            >Location, day, date, time | Sign up | Log in</span
-          >
-        </div>
-      </div>
-
-      <div class="row forecast" id="forecast">
-        <div class="col-6 weather-search">
-          <form class="search-engine">
-            <label for="search-city-form" class="search-weather"
-              >Search weather for:</label
+      <div class="weather-app">
+        <div class="row header" id="header">
+          <div class="col-6">
+            <h1>Weather Channel Bee</h1>
+          </div>
+          <div class="col-6">
+            <span class="current-local-info"
+              >Location, day, date, time | Sign up | Log in</span
             >
-            <input
-              type="text"
-              placeholder="Search city..."
-              class="search-city-form"
-              id="search-city-form"
-            />
-            <input
-              type="submit"
-              value="Search"
-              class="search-city-butotn"
-              id="search-city-butotn"
-            />
-          </form>
+          </div>
+        </div>
 
-          <div class="row serach-result">
-            <div class="col-3 city">Perth</div>
-            <div class="col-3 temperature">40°C | F</div>
-            <div class="col-3 description">Sunny</div>
-            <div class="col-3">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"
-                alt="weather-image"
-                class="weather-image"
-                width="20%"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="col-6 further-info" id="further-info">
-          <div class="row serach-result">
-            <div class="col-4 wind">Wind: <br />4m/s</div>
-            <div class="col-4 preasure">
-              Preasure: <br />
-              30 kPh
-            </div>
-            <div class="col-4 humidity">Humidity: <br />60%</div>
-          </div>
-        </div>
+        <small class="website-info">
+          This website is managed by
+          <a href="https://github.com/San2022-117" target="_blank"
+            >San2022-117</a
+          >.
+        </small>
+        <script src="src/script.js"></script>
       </div>
     </div>
-    <small class="website-info">
-      This website is managed by
-      <a href="https://github.com/San2022-117" target="_blank">San2022-117</a>.
-    </small>
-    <script src="src/script.js"></script>
   </body>
 </html>
