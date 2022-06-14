@@ -102,6 +102,10 @@ h1 {
   display: inline;
 }
 
+.description {
+  text-transform: capitalize;
+}
+
 .website-info {
   display: block;
   color: #e2f3f1;
