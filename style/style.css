@@ -102,7 +102,7 @@ h1 {
   display: inline;
 }
 
-.description {
+.description::first-letter {
   text-transform: capitalize;
 }
 
