@@ -74,12 +74,15 @@ h1 {
 .primary-info {
   padding-top: 6px;
 }
+div.col-3.primary-info.city {
+  font-size: 18px;
+}
 
 .primary-info.temperature {
   padding-top: 12px;
 }
 .primary strong {
-  font-size: 22px;
+  font-size: 26px;
   margin-right: 2px;
 }
 .primary small {
@@ -93,7 +96,7 @@ h1 {
   text-decoration: none;
 }
 .weather-icon {
-  width: 70%;
+  width: 80%;
 }
 .further-info {
   margin: 0 auto;
@@ -111,18 +114,12 @@ h1 {
   display: inline;
 }
 
-.city {
-  font-size: 20px;
-}
-.temperature {
-  font-size: 24px;
-}
-
 strong.temperature {
   font-size: 24px;
 }
 .description {
   font-size: 18px;
+  padding-top: 16px;
 }
 .description:first-letter {
   text-transform: capitalize;
