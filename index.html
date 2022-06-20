@@ -36,15 +36,15 @@
 
         <div class="row forecast" id="forecast">
           <div class="col-6 weather-search">
-            <form class="search-engine">
-              <label for="search-city-form" class="search-weather"
+            <form class="search-engine" id="search-engine">
+              <label for="search-city-input" class="search-weather"
                 >Search weather for:</label
               >
               <input
                 type="text"
                 placeholder="Search city..."
                 class="search-city-form"
-                id="search-city-form"
+                id="search-city-input"
               />
               <input
                 type="submit"
@@ -54,10 +54,10 @@
               />
             </form>
 
-            <div class="row serach-result primary">
-              <div class="col-3 primary-info city"> <span id="city" alt="location">location</span><br/><span id="dayTime" alt="time">day, time</span></div>
-              <div class="col-3 primary-info temperature"><strong id="temperature">25</strong><small></span><a href="#" class="cel" id="cel">°C</a>| <a href="#" class="fahr" id="fahr">°F</a></span></small></div>
-              <div class="col-3 primary-info description" id="description">Sunny</div>
+            <div class="row serach-result primary-info" id="primary-info">
+              <div class="col-3 primary city"> <span id="city" alt="location">location</span><br/><span id="dayTime" alt="time">day, time</span></div>
+              <div class="col-3 primary temperature"><strong id="temperature">25</strong><small></span><a href="#" class="cel" id="cel">°C</a>| <a href="#" class="fahr" id="fahr">°F</a></span></small></div>
+              <div class="col-3 primary description" id="description">Sunny</div>
               <div class="col-3">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"
@@ -72,13 +72,21 @@
 
           <div class="col-6 further-info" id="further-info">
             <div class="row serach-result">
-              <div class="col-4 wind">Wind: <br/><span id="wind"></span>m/s</div>
+              <div class="col-4 wind">
+                Wind: <br/>
+                <span id="wind"></span>
+                m/s
+              </div>
               <div class="col-4 pressure">
                 Pressure: <br />
                 <span id="pressure"></span>
                  kPh
               </div>
-              <div class="col-4 humidity">Humidity: <br /><span id="humidity"></span>%</div>
+              <div class="col-4 humidity">
+                Humidity: <br />
+                <span id="humidity"></span>
+                %
+              </div>
             </div>
           </div>
         </div>

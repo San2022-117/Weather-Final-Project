@@ -1,5 +1,3 @@
-alert("Looks like it works!");
-
 function formatDate(date) {
   let current = new Date(date);
   let hours = current.getHours();
@@ -40,8 +38,19 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "a46a064ebf3d176c277f7b42ebc41329";
-let city = "Prague";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "a46a064ebf3d176c277f7b42ebc41329";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let searchCityInput = document.querySelector("#search-city-input");
+  search(searchCityInput.value);
+}
+
+search("New York");
+
+let form = document.querySelector("#search-engine");
+form.addEventListener("submit", handleSubmit);

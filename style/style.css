@@ -74,11 +74,12 @@ h1 {
 .primary-info {
   padding-top: 6px;
 }
-div.col-3.primary-info.city {
+div.col-3.primary.city {
   font-size: 18px;
+  padding-top: 12px;
 }
 
-.primary-info.temperature {
+.primary.temperature {
   padding-top: 12px;
 }
 .primary strong {
