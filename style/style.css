@@ -89,7 +89,7 @@ div.col-3.primary.city {
 .primary small {
   font-size: 20px;
   position: relative;
-  top: -4px;
+  top: -10px;
 }
 
 .cel,
@@ -115,8 +115,8 @@ div.col-3.primary.city {
   display: inline;
 }
 
-strong.temperature {
-  font-size: 24px;
+span.temperature {
+  font-size: 34px;
 }
 .description {
   font-size: 18px;

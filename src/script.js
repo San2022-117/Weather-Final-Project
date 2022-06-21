@@ -24,7 +24,9 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#dayTime");
   let iconElement = document.querySelector("#icon");
 
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  celTemp = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celTemp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   pressureElement.innerHTML = response.data.main.pressure;
@@ -50,7 +52,28 @@ function handleSubmit(event) {
   search(searchCityInput.value);
 }
 
-search("New York");
+function displayFahrTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrTemp = (celTemp * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrTemp);
+}
+
+function displayCelTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celTemp);
+}
+
+let celTemp = null;
 
 let form = document.querySelector("#search-engine");
 form.addEventListener("submit", handleSubmit);
+
+let fahrLink = document.querySelector("#fahr");
+fahrLink.addEventListener("click", displayFahrTemp);
+
+let celLink = document.querySelector("#cel");
+celLink.addEventListener("click", displayCelTemp);
+
+search("New York");
