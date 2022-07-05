@@ -29,8 +29,8 @@
             <h1>Weather Channel Bee</h1>
           </div>
           <div class="col-6">
-            <span class="log-in"> Sign up | Log in</span
-            >
+            <span class="dayTime" id="dayTime" alt="time">day, time</span>
+            
           </div>
         </div>
 
@@ -55,8 +55,8 @@
             </form>
 
             <div class="row serach-result primary-info" id="primary-info">
-              <div class="col-3 primary city"> <span id="city" alt="location">location</span><br/><span id="dayTime" alt="time">day, time</span></div>
-              <div class="col-3 primary temperature"><span class="temperature" id="temperature">25</span><small></span><a href="#" class="cel" id="cel">°C</a>| <a href="#" class="fahr" id="fahr">°F</a></span></small></div>
+              <div class="col-3 primary city"> <span class="city" id="city" alt="location">location</span></div>
+              <div class="col-3 primary temperature"><span class="temperature" id="temperature">25</span><small></span><a href="#" class="cel active" id="cel">°C</a>| <a href="#" class="fahr" id="fahr">°F</a></span></small></div>
               <div class="col-3 primary description" id="description">Sunny</div>
               <div class="col-3">
                 <img
@@ -64,7 +64,7 @@
                   alt="weather-icon"
                   class="weather-icon"
                   id="icon"
-                  width="20%"
+                  
                 />
               </div>
             </div>

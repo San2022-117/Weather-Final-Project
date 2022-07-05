@@ -10,7 +10,7 @@ function formatDate(date) {
   }
   let days = ["Sun", "Mon", "Tue", "Thr", "Fri", "Sat"];
   let day = days[current.getDay()];
-  return ` ${day} ${hours}:${minutes} `;
+  return ` ${day} | ${hours}:${minutes} `;
 }
 
 function displayTemperature(response) {
@@ -55,12 +55,16 @@ function handleSubmit(event) {
 function displayFahrTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  celLink.classList.remove("active");
+  fahrLink.classList.add("active");
   let fahrTemp = (celTemp * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrTemp);
 }
 
 function displayCelTemp(event) {
   event.preventDefault();
+  celLink.classList.add("active");
+  fahrLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celTemp);
 }
