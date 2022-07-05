@@ -43,12 +43,16 @@ function displayTemperature(response) {
 function search(city) {
   let apiKey = "a46a064ebf3d176c277f7b42ebc41329";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  city = city.toLowerCase();
+  city = city.trim();
+  city = city.replace("brasil", "Brazil");
   axios.get(apiUrl).then(displayTemperature);
 }
 
 function handleSubmit(event) {
   event.preventDefault();
   let searchCityInput = document.querySelector("#search-city-input");
+
   search(searchCityInput.value);
 }
 
