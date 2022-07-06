@@ -49,13 +49,14 @@ h1 {
   background-color: #e2f3f1;
 }
 
-.search-weather {
-  font-size: 19px;
-}
 .search-engine {
   margin: 0 auto;
   padding: 10px 15px;
 }
+.search-weather {
+  font-size: 19px;
+}
+
 .search-city-form {
   margin-left: 10px;
   margin-right: 20px;
@@ -141,4 +142,47 @@ span.temperature {
 
 .primary-info .active :hover {
   text-decoration: none;
+}
+
+.weekly-forecast {
+  background-color: #e2f3f1;
+  margin: 10px auto;
+  max-width: 1000px;
+  border: 1px solid #030027;
+  border-radius: 2px;
+  line-height: 35px;
+}
+
+.weekly-forecast.week-day {
+  margin-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  width: 9%;
+}
+
+.week-day {
+  font-size: 18px;
+  color: black;
+  padding-left: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+img.week-day-forecast-image {
+  font-size: 30px;
+  text-align: center;
+  margin-left: -10px;
+}
+.week-day-temp-min {
+  color: black;
+  font-size: 18px;
+  opacity: 0.6;
+  margin-left: -2px;
+  margin-right: 3px;
+}
+
+.week-day-temp-max {
+  color: black;
+  font-size: 18px;
+  margin: 2px;
+  margin-left: 3px;
 }
