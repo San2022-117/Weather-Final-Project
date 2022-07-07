@@ -13,6 +13,26 @@ function formatDate(date) {
   return ` ${day} | ${hours}:${minutes} `;
 }
 
+function displayForecast() {
+  let weaklyForecastElement = document.querySelector("#weekly-forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Thur", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-2 week-day">
+                ${day}<br>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" class="week-day-forecast-image" width="50"> <br>
+                <span class="week-day-temp-min">3</span>
+                <span class="week-day-temp-max">12</span>
+              </div>
+           `;
+  });
+
+  forecsastHTML = forecastHTML + `</div>`;
+  weaklyForecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -85,3 +105,4 @@ let celLink = document.querySelector("#cel");
 celLink.addEventListener("click", displayCelTemp);
 
 search("New York");
+displayForecast();
