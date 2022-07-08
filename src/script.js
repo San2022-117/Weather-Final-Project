@@ -35,7 +35,8 @@ function displayForecast() {
 
 function getForecast(coordinates) {
   console.log(coordinates);
-let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiKey = "53a88e0ec99fb1cee4bb38a9047c2b0c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   console.log(apiUrl);
 }
 
@@ -70,8 +71,6 @@ function displayTemperature(response) {
 
 function search(city) {
   let apiKey = "53a88e0ec99fb1cee4bb38a9047c2b0c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   city = city.toLowerCase();
   city = city.trim();
