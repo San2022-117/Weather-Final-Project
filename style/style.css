@@ -153,9 +153,10 @@ span.temperature {
   line-height: 35px;
 }
 
-.weekly-forecast.week-day {
+.weekly-forecast.week-days {
   margin-top: 50px;
   margin: 0 auto;
+  padding-left: 20px;
   text-align: center;
   width: 9%;
 }
@@ -163,15 +164,25 @@ span.temperature {
 .week-day {
   font-size: 18px;
   color: black;
-  padding-left: 65px;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
-img.week-day-forecast-image {
+img {
   font-size: 30px;
   text-align: center;
-  margin-left: -10px;
+  margin-left: 2px;
 }
+
+div.week-day {
+  text-align: center;
+}
+div.weather-img {
+  text-align: center;
+}
+
+div.min-max {
+  text-align: center;
+}
+
 .week-day-temp-min {
   color: black;
   font-size: 18px;
